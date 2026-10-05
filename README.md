@@ -1,74 +1,62 @@
-# Fermor Finance Homepage
+# Fermor — Frontend Developer Assignment
 
-A modern, responsive homepage concept for Fermor, designed to make personal finance feel simpler, clearer, and more approachable.
+A polished, responsive Fermor homepage concept built with **React + Vite + plain CSS**.
 
-The project focuses on a premium fintech visual experience with strong typography, responsive layouts, interactive financial elements, subtle animations, and clear product storytelling.
+## Product direction
 
-## 🔗 Live Demo
+The page is designed around one product idea: **financial clarity should lead to better decisions**. The experience moves from understanding money, to acting on it, to growing over time.
 
-**[View the Live Fermor Homepage](https://fermor-finance-homepage.vercel.app/)**
+## Highlights
 
-## 📂 GitHub Repository
+- Responsive desktop, tablet and mobile layouts
+- Scroll-triggered reveal animations using `IntersectionObserver`
+- Animated wealth dashboard and SVG chart
+- Floating financial insight cards and subtle motion
+- Auto-scrolling brand/value ticker
+- Interactive recurring-investment projection calculator
+- Functional insight category filtering
+- Mobile navigation with accessible state labels
+- Keyboard focus states and reduced-motion support
+- No backend, authentication or database because the assignment asks for a homepage
+- Custom inline SVG icons; no icon library dependency
 
-**[Fermor-Finance-Homepage](https://github.com/PallaviVasanth/Fermor-Finance-Homepage)**
+## Tech stack
 
-## ✨ Features
+- React 19
+- Vite 7
+- Plain CSS
+- Native browser APIs (`IntersectionObserver`, `requestAnimationFrame`)
 
-- Modern fintech-inspired homepage
-- Fully responsive desktop, tablet, and mobile layouts
-- Interactive financial dashboard
-- Investment projection interaction
-- Insight filtering
-- Animated UI elements and scroll-based reveals
-- Responsive mobile navigation
-- Smooth section navigation
-- Interactive CTA buttons
-- Hover and micro-interactions
-- Accessible focus states
-- Reduced-motion support
-- Clean visual hierarchy and spacing
-
-## 🛠️ Tech Stack
-
-- React
-- Vite
-- JavaScript
-- CSS
-- HTML5
-
-## 🎯 Design Approach
-
-The homepage is structured around three simple ideas:
-
-**Understand → Act → Grow**
-
-The experience is designed to help users understand their financial position, explore actionable insights, and build confidence around their financial decisions.
-
-The visual direction uses:
-
-- Premium fintech aesthetics
-- Large editorial typography
-- Soft neutral backgrounds
-- Dark navy/charcoal UI elements
-- Green accent highlights
-- Rounded cards
-- Subtle borders and shadows
-- Motion used to reinforce interaction rather than distract from the content
-
-## 📱 Responsive Experience
-
-The interface is optimized for:
-
-- Desktop
-- Laptop
-- Tablet
-- Mobile devices
-
-Responsive behavior includes adaptive layouts, mobile navigation, flexible dashboard components, and optimized spacing and typography across screen sizes.
-
-## 🚀 Getting Started
-
-### 1. Clone the repository
+## Run locally
 
 ```bash
-git clone https://github.com/PallaviVasanth/Fermor-Finance-Homepage.git
+npm install
+npm run dev
+```
+
+## Production build
+
+```bash
+npm run build
+npm run preview
+```
+
+## Design decisions
+
+The visual language uses an editorial fintech aesthetic: warm off-white surfaces, deep green typography, lime financial signals, oversized type, soft borders, and restrained motion. The financial dashboard is illustrative UI created specifically for the assignment rather than a claim about live customer data.
+
+The projection calculator uses a monthly contribution model with an illustrative 11% annual rate. It is intentionally presented as an educational interaction, not financial advice.
+
+## Scope
+
+This submission intentionally focuses on the requested homepage. Sign-in, account creation, backend APIs and real financial data are outside the assignment scope.
+
+## Submission checklist
+
+- [ ] `npm install` succeeds
+- [ ] `npm run build` succeeds
+- [ ] Test desktop at 1440px / 1024px
+- [ ] Test tablet around 768px
+- [ ] Test mobile at 390px / 375px / 320px
+- [x] Deploy to Vercel
+- [x] [Live Demo](https://fermor-finance-homepage.vercel.app/)
